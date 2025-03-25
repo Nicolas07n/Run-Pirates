@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class Pirata : MonoBehaviour
 {
-    // Start is called before the first frame update
+    private Rigidbody2D pirataRb;
     void Start()
     {
-        
+        pirataRb = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+
+
+        }
     }
 }
