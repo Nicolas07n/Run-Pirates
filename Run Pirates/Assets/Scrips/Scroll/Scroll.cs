@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Scroll : MonoBehaviour
 {
-    private float scrollSpeed = 8f;
+    private float scrollSpeed = 8f;// Velocidad
     
     void Start()
     {
