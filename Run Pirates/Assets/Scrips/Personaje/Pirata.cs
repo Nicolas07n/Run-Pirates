@@ -28,7 +28,6 @@ public class Pirata : MonoBehaviour
                 pirataRb.AddForce(Vector2.up * upForce);
             }
 
-            
 
         }
     }
