@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Timers;
 using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    public GameObject[] obstacles ;
+    public GameObject[] obstacles ;//Aqui ponemos los diferentes prefabs
     void Start()
     {
         StartCoroutine(SpawnObstacle());
@@ -15,16 +16,16 @@ public class Spawner : MonoBehaviour
         
     }
 
-    private IEnumerator SpawnObstacle()
+    private IEnumerator SpawnObstacle()//Corrutina
     {
-        while (true)
+        while (true)//bucle
         {
-            int randomIndex = Random.Range(0, obstacles.Length);
-            float tiempomin = 0.6f;
-            float tiempomax = 1.8f;
-            float randomTime = Random.Range(tiempomin,tiempomax);
-            Instantiate(obstacles[randomIndex], transform.position, Quaternion.identity);
-            yield return new WaitForSeconds(randomTime);
+            int randomIndex = Random.Range(0, obstacles.Length);//Te devuelve un numero aleatorio entre 0 y la cantidad de obstaculos 
+            float tiempomin = 0.6f; //El tiempo minimo 
+            float tiempomax = 1.8f;//El tiempo max
+            float randomTime = Random.Range(tiempomin,tiempomax);//Genera un numero aleatorio tambien entre el timpo min y el max
+            Instantiate(obstacles[randomIndex], transform.position, Quaternion.identity);//Esto instancia al objeto
+            yield return new WaitForSeconds(randomTime);//Para que no puto pete el unity , osea no instancia todo de seguido
         }
 
         
@@ -32,7 +33,7 @@ public class Spawner : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Destroy(collision.gameObject);
+        Destroy(collision.gameObject); // Para cuando toque El colider se destruya
     }
 
 
