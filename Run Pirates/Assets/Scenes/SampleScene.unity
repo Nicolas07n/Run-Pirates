@@ -709,6 +709,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textoTiempo: {fileID: 564098301}
+  velocidad: 5
 --- !u!114 &564098301
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -729,9 +730,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '
-
-'
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 66370b35d88a6f14da61f51376205365, type: 2}
   m_sharedMaterial: {fileID: 5195726361983568146, guid: 66370b35d88a6f14da61f51376205365, type: 2}
