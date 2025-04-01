@@ -387,6 +387,7 @@ GameObject:
   - component: {fileID: 298248960}
   - component: {fileID: 298248964}
   - component: {fileID: 298248963}
+  - component: {fileID: 298248965}
   m_Layer: 0
   m_Name: Pirata
   m_TagString: Untagged
@@ -462,7 +463,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: -2032863384, guid: 21fecb30da1add6499ff5ee392018d9c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -482,8 +483,8 @@ Transform:
   m_GameObject: {fileID: 298248959}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.87, y: -1.12, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -5.5552, y: -0.73, z: 0}
+  m_LocalScale: {x: 3.6671982, y: 3.0125637, z: 1.5568}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1140206462}
@@ -543,7 +544,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 0.44, y: 0.59}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -551,11 +552,39 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.5, y: 0.5}
-      - {x: -0.5, y: -0.5}
-      - {x: 0.5, y: -0.5}
-      - {x: 0.5, y: 0.5}
+    - - {x: 0.093246154, y: 0.31748813}
+      - {x: -0.07116989, y: 0.324403}
+      - {x: -0.10470343, y: 0.20943326}
+      - {x: -0.22891265, y: 0.20963784}
+      - {x: -0.2639473, y: -0.29700765}
+      - {x: 0.20098162, y: -0.31080973}
+      - {x: 0.23526846, y: -0.21372339}
+      - {x: 0.20880306, y: -0.12728308}
+      - {x: 0.249607, y: 0.100994386}
+      - {x: 0.16911754, y: 0.1582571}
+      - {x: 0.11370666, y: 0.1907678}
   m_UseDelaunayMesh: 0
+--- !u!95 &298248965
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 298248959}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5d2c5458d228e3745aac50b32a4254b6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &451043927
 GameObject:
   m_ObjectHideFlags: 0
