@@ -6,7 +6,7 @@ using UnityEngine;
 public class Cronometro : MonoBehaviour
 {
     public TextMeshProUGUI textoTiempo; // Arrastra aquí el TextMeshPro en el Inspector
-    public float velocidad = 7f;
+    public float velocidad = 10f;
     private int tiempo;
     
 
