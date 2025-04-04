@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 8032171160819381350}
   - component: {fileID: 6418771735387081835}
   - component: {fileID: -9026583753575945657}
-  - component: {fileID: -988524167427648607}
   - component: {fileID: -6322885620827199455}
+  - component: {fileID: -5766626556839397273}
   m_Layer: 0
   m_Name: PowerUps
   m_TagString: Untagged
@@ -99,20 +99,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 485c117975e90eb42b9614b70e6b78fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &-988524167427648607
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8627822712134583009}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ced7b51fa65544941ac3b82a2c4c2424, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerLayerName: Pirata
-  recogidaSound: {fileID: 0}
 --- !u!61 &-6322885620827199455
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -158,3 +144,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &-5766626556839397273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8627822712134583009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 864d7570c990d254f91568eb2641adea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedBoost: 5000
+  duration: 3
