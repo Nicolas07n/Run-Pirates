@@ -9,7 +9,7 @@ public class PowerUps : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        //si el objeto que colisiona tiene el tag del pirata
+        //Si el objeto que colisiona tiene el tag del pirata
         if (collision.gameObject.CompareTag(playerTag))
         {
             // Destruye el PowerUp 

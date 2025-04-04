@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AumentoVelocidad : MonoBehaviour
+public class AumentoSalto : MonoBehaviour
 {
-    public float speedBoost = 3f; // Cuánto aumenta la velocidad
+    public float speedBoost = 3f; //Aumenta la velocidad
     public float duration = 3f; // Duración del efecto
 
     private Pirata pirataScript;
