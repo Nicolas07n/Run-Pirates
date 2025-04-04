@@ -20,7 +20,7 @@ public class AumentoSalto : MonoBehaviour
                 StartCoroutine(AumentarVelocidad());
             }
 
-            Destroy(gameObject); // Elimina el power-up después de tocarlo
+            Destroy(gameObject); // Elimina el PowerUp después de tocarlo
         }
     }
 
