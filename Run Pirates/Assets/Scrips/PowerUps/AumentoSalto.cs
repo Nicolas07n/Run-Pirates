@@ -5,9 +5,16 @@ using UnityEngine;
 public class AumentoSalto : MonoBehaviour
 {
     public float speedBoost = 3f; //Aumenta la velocidad
-    public float duration = 3f; // Duración del efecto
+    public float duration = 1f; // Duración del efecto
 
     private Pirata pirataScript;
+    private SpriteRenderer spriteRenderer;
+    private Collider2D col;
+    private void Start()
+    {
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        col = GetComponent<Collider2D>();
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -17,18 +24,21 @@ public class AumentoSalto : MonoBehaviour
 
             if (pirataScript != null)
             {
+                // Ocultar el objeto visualmente y desactivarlo físicamente
+                spriteRenderer.enabled = false;
+                col.enabled = false;
+
                 StartCoroutine(AumentarVelocidad());
             }
-
-            Destroy(gameObject); // Elimina el PowerUp después de tocarlo
         }
     }
 
     private IEnumerator AumentarVelocidad()
     {
         pirataScript.upForce += speedBoost; // Aumenta la fuerza del salto
-        yield return new WaitForSeconds(duration); // Espera 3 segundos
+             yield return new WaitForSeconds(duration); // Espera 3 segundos
         pirataScript.upForce -= speedBoost; // Vuelve a la velocidad normal
+        Destroy(gameObject);//Lo destruye
     }
 }
 
