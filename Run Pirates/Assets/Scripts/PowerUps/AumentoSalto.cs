@@ -10,6 +10,8 @@ public class AumentoSalto : MonoBehaviour
     private Pirata pirataScript;
     private SpriteRenderer spriteRenderer;
     private Collider2D col;
+
+
     private void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();

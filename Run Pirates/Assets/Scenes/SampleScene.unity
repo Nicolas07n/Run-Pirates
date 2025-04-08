@@ -307,9 +307,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obstacles:
+  - {fileID: 8627822712134583009, guid: 3b3760c10f7861e4981ec8716db82c9f, type: 3}
   - {fileID: 5182074591648951634, guid: ba68d2671245ed84691af820770913de, type: 3}
   tiempomin: 5
-  tiempomax: 7
+  tiempomax: 8
 --- !u!1 &112383827
 GameObject:
   m_ObjectHideFlags: 0
