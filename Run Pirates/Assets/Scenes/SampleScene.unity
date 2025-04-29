@@ -309,6 +309,7 @@ MonoBehaviour:
   obstacles:
   - {fileID: 8627822712134583009, guid: 3b3760c10f7861e4981ec8716db82c9f, type: 3}
   - {fileID: 5182074591648951634, guid: ba68d2671245ed84691af820770913de, type: 3}
+  - {fileID: 4752220658523303322, guid: ffc263eacf5bdb345b6c9f35b818021b, type: 3}
   tiempomin: 5
   tiempomax: 8
 --- !u!1 &112383827
