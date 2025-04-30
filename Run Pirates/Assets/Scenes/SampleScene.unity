@@ -591,7 +591,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   radius: 0.1
-  upForce: 800
+  upForce: 850
 --- !u!60 &298248964
 PolygonCollider2D:
   m_ObjectHideFlags: 0
